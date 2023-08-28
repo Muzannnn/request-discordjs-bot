@@ -38,7 +38,7 @@ With this bot you can send private messages to users of your discord server via 
 
 ## Authors
 
-- [@Muzan](https://github.com/Muzan72)
+- [@Muzan](https://github.com/Muzannnn)
 
 
 ## License
