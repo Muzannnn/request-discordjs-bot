@@ -4,6 +4,7 @@ With this bot you can send private messages to users of your discord server via 
 
 ## Installation
 
+- Install Node.js 18
 - Clone this repo
 - Run `npm i`
 - Copy `.env.example` and rename it to `.env` and change the variables
