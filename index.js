@@ -55,7 +55,7 @@ app.post('/examplewithmessage', (req, res) => {
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setPresence({ activities: [{ name: 'See a requests' }], status: 'watching' });
+    client.user.setPresence({ activities: [{ name: process.env.PRESENCE }], status: process.env.PRESENCE_STATUS });
 });
 
 
