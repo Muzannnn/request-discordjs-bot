@@ -35,6 +35,16 @@ With this bot you can send private messages to users of your discord server via 
 | :-------- | :------- | :------------------------- |
 | `user` | `string` | **Required**. User id |
 
+#### Send embed to Channel
+
+```http
+  POST /examplewithmessageforchannel
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `channel` | `number` | **Required**. Channel id |
+
 
 
 ## Authors
