@@ -53,6 +53,23 @@ app.post('/examplewithmessage', (req, res) => {
     res.status(200).send("success");
 })
 
+app.post('/examplewithmessageforchannel', (req, res) => {
+    if (!req.body.channel) {
+        res.status(400).send('error: all params not set');
+    };
+
+    const channel = client.channels.cache.get(!req.body.channel);
+
+    const examplemessage = new EmbedBuilder()
+        .setColor(0x04BA00)
+        .setTitle('A example message')
+        .setDescription('This is a example message')
+        .setTimestamp()
+
+    channel.send(req.body.user, { embeds: [examplemessage] });
+    res.status(200).send("success");
+})
+
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
     client.user.setPresence({ activities: [{ name: process.env.PRESENCE }], status: process.env.PRESENCE_STATUS });
